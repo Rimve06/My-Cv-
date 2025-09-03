@@ -1,0 +1,240 @@
+<html>
+    <head>
+         <meta name="viewport" content="device-width,initial-scale=1.0">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <style>
+           body{
+           
+            background-image: linear-gradient(white,rgb(163, 163, 255),rgb(82, 82, 212));
+            transition: all 0.3s ease-in-out;
+           }
+           .head img
+           {
+            position:absolute;
+            top: 5vh;
+            width:20vh;
+            height: 20vh;
+            border-radius:50%;
+            object-fit: cover;
+           }
+           .head #name
+           {
+              position:relative;
+              top:10vh;
+              left:35vw;
+              background-color: aliceblue;
+              height: 8vh;
+              width:60vw;
+              border-radius:15px;
+              display: flex;          
+              justify-content: center;
+              align-items: center;
+              text-align: center;  
+              font-size: 1rem;
+              flex-wrap:wrap;
+              flex-direction: column;
+              line-height: 1.1em;
+              padding:2vh;
+        }
+        .box
+        {
+           position:relative;
+           background-color: rgb(230, 230, 230);
+           top:18vh;
+           left: .5vw;
+           
+           width:90vw;
+           border-radius:7px;
+           margin:1dvh;              
+        }
+        .box p
+        {
+              font-size: 1.5rem;
+              padding: 1%;
+              text-indent: 1%;
+              box-sizing: border-box;
+              margin:0;
+        }
+        .content {
+            display: none; /* hidden by default */
+            padding: 1%;
+            font-size: 1rem;
+        }
+        .edu-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+}
+#personal{
+    background-color: white;
+    border-radius: 7px;
+    padding:7px;
+}
+#skill{
+    background-color: white;
+    border-radius: 7px;
+    padding:7px;
+}
+
+.edu-grid .edu-header,
+.edu-grid .edu-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr; 
+    gap: 10px;
+    padding: 8px 12px;
+    text-align: center;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+.edu-grid .edu-header {
+    font-weight: bold;
+    background-color: #d0d0d0;
+}
+
+.edu-grid .edu-row:nth-child(even) {
+    background-color: #f5f5f5; 
+}
+.current-study span {
+    font-size: 0.9rem; /* change to whatever size you want */
+    text-align: left;  /* optional */
+}
+
+
+    </style>
+    <body>
+      <div class="head">
+        <img src="profile-pic.png"> 
+        <p id="name"><b>TASMIN RUBAIAT RIMVE</b>A tech enthuasist turning ideas into growth</p>
+      </div>
+      <div class="box">
+      <p class="title" onclick="toggleContent('text')"><i class="fa-solid fa-bars"></i> CV Objectives</p>
+    <div class="content" id="text">
+        <p>
+         Take my greetings.This is a letter to express my desire to be an efficient worker as a volumnteer of UNYAB As advertised on the official page of UNYAB. With my background
+         In computer science field And as a compassionate person to serve the public I believe that I am a strong candidate for this role of volunteer in such a reputed organization.
+         <br><br>
+         I have previously served as class monitor and organized blood camps at schools and have directed Science fair teams. Sometimes I used to work as a volunteer at local on Friday to 
+        serve the poors food. These experiences have instilled the values of kindness and compassion, responsibility and service to society. in me to do something for the needy people those who needs our help. But due to the lack of proper
+        Opportunities, Pressure of studies and being a child, I couldn't do much to engage actively in such volunteer works but now as an adult as a university student I am free to contribute as per my choices.
+        The passion to serve people will help me contribute effectively to your team with my skills and knowledge.
+        
+        <br><br>
+        Alongside my academic pursuits in B.Tech Engineering (CSE) at Khulna University of Engineering and Technology, I have developed skills in photography, programming, calligraphy, logo designing and general computer literacy. I am confident 
+        that these skills, along with my dedication, will help me support UNYAB’s initiatives. While my schedule is demanding, I am able to participate actively in volunteer activities during weekends and holidays.I am particularly excited about
+         this opportunity because it allows me to fulfill a long-standing passion for serving others, which I have carried since childhood. I am confident that my commitment and enthusiasm will allow me to add value
+         to UNYAB’s impactful work.
+        <br><br>
+         Thank you for considering my application I would welcome the opportunity to discuss how my background and skills align with the needs of your team I look forward to the possibility of contributing to UNYAB.
+
+         Sincerely 
+         Tasmin Rubiat Rimve
+    </p>
+
+        </div></div>
+      <div class="box">
+        <p class="title" onclick="toggleContent('personal')"><i class="fa-solid fa-bars"></i> Personal Info</p>
+         <div class="content" id="personal">
+        <p > Name:Tasmin Rubaiat Rimve</p>
+        <p> Father's Name :M.M. Rafique Reza</p>
+        <p> Mother's Name :MST. Jahida Khatun</p>
+        <p> Date of Birth: 15th November,2006</p>
+        <p> Nationality: Bangladeshi </p>
+        <p> Martial status: Unmarried</p>
+        <p>Present Address: KUET main gate ,Khulna,Bangladesh </p>
+        <p> Permanent Address: Kushtia,Khulna, Bangladesh</p>
+        <p>Email: tasminrubaiat@example.com</p>
+        <p>Phone: +8801943114467</p>
+        <p>Portfolio: <a href="profile project.htm" target="_blank">Social Links</a></p>
+         </div>
+      </div>
+
+
+    <div class="box">
+    <p class="title" onclick="toggleContent('education')"><i class="fa-solid fa-bars"></i> Educational Details</p>
+    <div class="content" id="education">
+      <div class="edu-grid" >
+        <div class="edu-header">
+            <span>Degree</span>
+            <span>Year</span>
+            <span>GPA</span>
+            <span>Board</span>
+        </div>
+        <div class="edu-row">
+            <span>PSC</span>
+            <span>2015</span>
+            <span>5.0</span>
+            <span>Jashore</span>
+        </div>
+        <div class="edu-row">
+            <span>JSC</span>
+            <span>2018</span>
+            <span>5.0</span>
+            <span>Jashore</span>
+        </div>
+        <div class="edu-row">
+            <span>SSC</span>
+            <span>2020</span>
+            <span>5.0</span>
+            <span>Jashore</span>
+        </div>
+         <div class="edu-row">
+            <span>HSC</span>
+            <span>2023</span>
+            <span>5.0</span>
+            <span>Jashore</span>
+        </div>
+        <div class="edu-row current-study" style="position:relative; margin-bottom:0; padding-bottom:0;">
+     <span style="font-weight:bold; font-size:large">Current Studies:</span>  
+     <span style="font-size:medium; margin:0;">University: Khulna University of Engineering & Technology</span>
+     <span style="font-size:medium; margin:0;">Year: 2023-Current</span>
+     <span style="font-size:medium; margin:0;">Department: Computer Science & Engineering</p>
+     </span>
+     </div>
+        </div>
+      </div>
+      </div>
+
+
+
+     <div class="box">
+      <p class="title" onclick="toggleContent('skills')"><i class="fa-solid fa-bars"></i> Additional Skills</p>
+    <div class="content" id="skills">
+        <p class="title" onclick="toggleContent('cer')"><i class="fa-solid fa-bars"></i> certifications</p>
+        <div class="content" id="cer">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        </div>
+        <p><u>Language:</u><br>Bangla (native)<br>English( Fluent)  <br> Hindi(Fluent) <br>Gujrati(fair) <br>Panjabi(fair) <br> German(basic)<p></p>
+        <p>Computer Skill:
+        </p>
+        <p>Programming Skills: C,C++,Python,Javascript,Html,CSS</p>
+        <p>Typing speed:57 WPS</p>
+        <p>Other Specialities: Power Point,Microsoft Word Office,Canva</p>
+      </div></div> 
+      
+      <script>
+function toggleContent(id) {
+    // Hide all sections first
+    const sections = document.querySelectorAll('.content');
+    sections.forEach(section => {
+        if (section.id !== id) {
+            section.style.display = "none";
+        }
+    });
+
+    // Toggle the clicked section
+    const element = document.getElementById(id);
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+    }
+}
+</script>
+
+    </body>
+</html>
